@@ -2,7 +2,7 @@ console.log(
   '%cHi.',
   "color: blue; font-family:monospace; font-size: 40px; font-weight: bolder; text-shadow: 0px 0px 10px gray;"
 );
-console.error("What are you doing in the console?");
+console.error("something is wrong!");
 console.log("%chmm...", "font-style: italic; font-size: 5px;");
 console.log("%chmm...", "font-style: italic; font-size: 10px;");
 console.log("%chmm...", "font-style: italic; font-size: 20px;");
@@ -45,6 +45,8 @@ function intro() {
       ease: "elastic.out(1, 0.75)",
     })
     .from(".contactbutton", { opacity: 0 }, "<0.28")
+    .from(".navbar", { y: 20, opacity: 0 }, "<")
+    .from(".navbar .logo", {opacity: 0 })
     .from(".links", { y: 20, opacity: 0 }, "<")
     .from(".links a", {
       "padding-top": "20px",
@@ -69,7 +71,6 @@ var main = gsap.timeline();
 main.add(intro());
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
-
 const textArray = ["tech enthusiast.", "engineer.", "programmer.", "problem solver.", "developer."];
 const typingDelay = 200;
 const erasingDelay = 100;
@@ -107,4 +108,9 @@ function erase() {
 
 document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
   if(textArray.length) setTimeout(type, newTextDelay + 250);
+});
+$(document).ready(function() {
+    $('.logo').click(function() {
+            $('#collapse').slideToggle("slow");
+    });
 });
