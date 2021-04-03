@@ -151,7 +151,7 @@ h5{
   padding-top: 10px;
   margin-left: 10px !important;
   font-weight: bold !important;
-  font-size: 20px !important;
+  font-size: 25px !important;
 }
 
 .popup {
@@ -294,7 +294,7 @@ form button:nth-of-type(2) {
 }
 .about {
   height: 30vh;
-  border-radius: 5px;
+  border-radius: 15px;
   background-color: var(--background-secondary-accent);
   display: flex;
   flex-direction: column;
@@ -306,7 +306,9 @@ form button:nth-of-type(2) {
 }
 .about p {
   margin: 5px 15px;
-  text-align: center;
+  text-align: justify;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 .about p span {
   display: inline-block;
@@ -320,7 +322,7 @@ footer {
   width: 100%;
   padding: 5px;
   background-color: black;
-  font-size: 20px;
+  font-size: 15px;
 }
 footer a {
   color: var(--text);
