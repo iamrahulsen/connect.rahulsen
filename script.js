@@ -113,6 +113,13 @@ $(document).ready(function () {
   $('.logo').click(function () {
     $('#collapse').slideToggle("slow");
   });
+  $(".ok").click(function () {
+    $(".popups").hide("slow", "swing");
+  });
+  $(".sub").click(function () {
+    $(".popup").hide();
+    $(".popups").show("slow", "swing");
+  });
 
   const menuBtn = document.querySelector('.menu-btn');
   let menuOpen = false;
