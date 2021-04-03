@@ -358,3 +358,9 @@ footer .this-version {
   99% { background-color: transparent; }
   100%  { background-color: #ccc; }
 }
+@media screen and (max-width: 500px) {
+  .box-area {
+    visibility: hidden;
+    display: none;
+  }
+}
