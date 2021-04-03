@@ -109,7 +109,21 @@ function erase() {
 document.addEventListener("DOMContentLoaded", function () { // On DOM Load initiate the effect
   if (textArray.length) setTimeout(type, newTextDelay + 250);
 });
+
+
 $(document).ready(function () {
+  $('button[type="submit"]').attr('disabled', true);
+  $('input[type="text"],input[type="email"],textarea').on('keyup', function () {
+    var textarea_value = $("#texta").val();
+    var text_name = $('input[name="name"]').val();
+    var text_email = $('input[name="email"]').val();
+    if (textarea_value != '' && text_name != '' && text_email != '') {
+      $('button[type="submit"]').attr('disabled', false);
+    } else {
+      $('button[type="submit"]').attr('disabled', true);
+    }
+  });
+
   $('.logo').click(function () {
     $('#collapse').slideToggle("slow");
   });
@@ -120,6 +134,8 @@ $(document).ready(function () {
     $(".popup").hide();
     $(".popups").show("slow", "swing");
   });
+
+
 
   const menuBtn = document.querySelector('.menu-btn');
   let menuOpen = false;
