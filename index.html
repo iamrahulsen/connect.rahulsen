@@ -32,6 +32,36 @@
     </div>
     <div class="Welcome text-white h4">Welcome!</div>
   </div>
+  <div class="popup">
+    <form action="https://formspree.io/f/mjvjvgvw" name="contact" method="POST" netlify>
+      <div class="text">
+        <h2>Send me a text!</h2>
+      </div>
+      <hr />
+      <label for="name">Your Name:</label>
+      <input type="text" placeholder="Your Name" name="name" required />
+      <label for="email">Your Email:</label>
+      <input type="email" placeholder="Your Email" name="email" required />
+      <label for="message">Your Message:</label>
+      <textarea placeholder="Your Message" name="message" cols="30" rows="10" required></textarea>
+      <div class="buttons">
+        <button class="sub" type="submit">Send it!</button>
+        <button type="button" class="toggleform">Cancel</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="popups">
+    <form action="" name="contact" method="POST" netlify>
+      <div class="text">
+        <h2>Your text was sent successfully!</h2>
+      </div>
+      <hr />
+      <button class="ok" type="button">Ok!</button>
+  </div>
+  </form>
+  </div>
+
 
   <div class="animation-area">
     <div class="title-container">
@@ -54,8 +84,7 @@
       </div>
     </div>
 
-
-    <!--<button class="contactbutton toggleform">Contact Me</button>-->
+    <button class="contactbutton toggleform">Contact Me</button>
     <div class="links">
       <a href="https://github.com/iamrahulsen/" rel="me" target="_blank">GitHub</a>
       <a href="https://instagram.com/iamrahulsen/" rel="me" target="_blank">Instagram</a>
