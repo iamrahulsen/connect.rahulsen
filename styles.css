@@ -78,17 +78,18 @@ body {
 }
 .menu-btn {
   margin-left: 10px;
+  margin-bottom: 10px;
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
-  width: 50px;
+  width: 35px;
   height: 40px;
   cursor: pointer;
   transition: all .5s ease-in-out;
 }
 .menu-btn__burger {
-  width: 50px;
+  width: 35px;
   height: 5px;
   background: #fff;
   border-radius: 5px;
@@ -99,7 +100,7 @@ body {
 .menu-btn__burger::after {
   content: '';
   position: absolute;
-  width: 50px;
+  width: 35px;
   height: 5px;
   background: #fff;
   border-radius: 5px;
